@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SHIFT3</title>
+        <meta charset="utf-8">
+        <style>
+            a {
+                color: white;
+                text-decoration: none;
+                margin: 0px;
+            }
+            h1{
+                color: white;
+                padding-left: 20px;
+                padding-top: 20px;
+                margin: 0px;
+                font-size: 50px;
+            }
+            main{
+                margin: 0px;
+            }
+            #header{
+                display: grid;
+                grid-template-columns: 7fr 4fr;
+                background-color: #001c63;
+                color: white;
+                height: 100px;
+                margin:0px;
+            }
+            #menu{
+                list-style-type: none;
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 5px;
+            }
+            .mainimage{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                margin-top: 10px;
+                margin-bottom: 8px;
+            }
+            
+            .container{
+                border-width: 3px;
+                border-style: solid;
+                border-color: white;
+            }
+            .container::after{
+                content: "";
+                background-image: url('/Users/seungmingo/Desktop/Web_SHIFT3/IMG_4710.jpeg');
+                position: absolute;
+                background-size: cover;
+                top: 100px;
+                left: 0px;
+                right: 0px;
+                bottom: 300px;
+                z-index: -1;
+                opacity: 0.5;
+            }
+            .insta_list{
+                background-color: #001c63;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
+                grid-template-rows: 400px 400px;
+                padding-left: 25px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                
+            }
+            .insta{
+                padding-left: 15px;
+                width: 100%;
+                height: 100%;
+                padding-bottom: 15px;
+                
+            }
+            body{
+                margin: 0px;
+            }
+            .footer{
+
+                background-color: #808080;
+                margin: 0px;
+                padding: 20px;
+                word-spacing: 5px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            .fotter_word1{
+                color: white;
+                font-size: larger;
+                font-weight: bolder;
+            }
+            .mid_section{
+                width: 100vw;
+                height: 500px;
+                position: relative;
+                overflow: hidden;
+                margin: 0px;
+                padding: 0px;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .mid_section_photo{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+            
+
+            
+        
+            
+        
+        </style>
+    </head>
+
+    <body>
+        <header id="header">
+            <h1><a href="home.html">SHIFT3</a></h1>
+            <nav>
+                <ul id="menu">
+                    <li>컨텐츠</li>
+                    <li>셀렉트샵</li>
+                    <li>마이페이지</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="mainimage">
+                <div class='container'>
+                        <img src="shift.png" width="225" height="232,4">
+                        <img src="shop0.png" width="225" height="232,4">
+                        <img src="shop1.png" width="225" height="232,4">  
+                </div>
+            </div>
+            
+            <article class="insta_list">
+                    <div class="insta"><a href="https://www.instagram.com/p/CnJV6KPuAxe/" target="_blank"><img src="item0.png" width="400" height="400"></a></div>
+                    <div class="insta"><a href="https://www.instagram.com/p/Cm_I6IXOdEX/" target="_blank"><img src="item1.png"width="400" height="400"></a></div>
+                    <div class="insta"><a href="https://www.instagram.com/p/Cm3-DyIpMgN/" target="_blank"><img src="item2.png"width="400" height="400"></a></div>
+                    <div class="insta"><a href="https://www.instagram.com/p/CmiWnUWptj-/" target="_blank"><img src="item3.png"width="400" height="400"></a></div>
+                    <div class="insta"><a href="https://www.instagram.com/p/CmbCR1tuTTh/" target="_blank"><img src="item4.png"width="400" height="400"></a></div>
+                    <div class="insta"><a href="https://www.instagram.com/p/CmYP89yJxk5/" target="_blank"><img src="item5.png"width="400" height="400"></a></div>
+            </article>
+            <div class="mid_section">
+                <div class="mid_section_photo"><img src="selectshop0.jpeg" style="width: 100%; height: 100%;"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="fotter_word1">SHIFT3 <br> </div>
+                <div class="fotter_word">대표 : 이기범 <br></div>
+                <div class="fotter_word">팀원 : 안지민, 유수한, 김정화, 고승민 <br></div>
+                <div class="fotter_word">사무실 : 순천향대학교 미디어랩스 7층</div>
+                <div class="fotter_word"><a href="https://www.instagram.com/shift3_official/">Official_Instagram</a></div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
